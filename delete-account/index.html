@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MatchMyTrip - Konto l&ouml;schen / Delete Account</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.7;
+            color: #1a1a1a;
+            background: #f8f9fa;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 24px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 48px;
+            padding-bottom: 24px;
+            border-bottom: 2px solid #00897B;
+        }
+        header h1 { font-size: 28px; color: #00897B; margin-bottom: 8px; }
+        header p { color: #666; font-size: 14px; }
+        .lang-switch {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 32px;
+        }
+        .lang-switch button {
+            padding: 8px 24px;
+            border: 2px solid #00897B;
+            border-radius: 24px;
+            background: white;
+            color: #00897B;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .lang-switch button.active { background: #00897B; color: white; }
+        .lang-switch button:hover { opacity: 0.85; }
+        .content { display: none; }
+        .content.active { display: block; }
+        h2 {
+            font-size: 20px;
+            color: #00897B;
+            margin: 32px 0 12px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        h3 {
+            font-size: 17px;
+            color: #333;
+            margin: 20px 0 8px;
+        }
+        p, li { margin-bottom: 8px; font-size: 15px; }
+        ul, ol { padding-left: 24px; margin-bottom: 16px; }
+        strong { color: #333; }
+        .section { margin-bottom: 24px; }
+        .contact-info {
+            background: #e0f2f1;
+            padding: 16px 20px;
+            border-radius: 8px;
+            margin: 12px 0;
+        }
+        .warning {
+            background: #fff3e0;
+            border-left: 4px solid #ff9800;
+            padding: 16px 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 16px 0;
+        }
+        .steps {
+            background: #f5f5f5;
+            padding: 20px 24px;
+            border-radius: 8px;
+            margin: 16px 0;
+        }
+        .steps ol { margin-bottom: 0; }
+        .steps li { margin-bottom: 12px; }
+        footer {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid #e0e0e0;
+            text-align: center;
+            color: #999;
+            font-size: 13px;
+        }
+        a { color: #00897B; }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 24px;
+            color: #00897B;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .back-link:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../" class="back-link">&larr; Zur&uuml;ck / Back</a>
+        <header>
+            <h1>MatchMyTrip</h1>
+            <p>Konto l&ouml;schen / Delete Account</p>
+        </header>
+
+        <div class="lang-switch">
+            <button class="active" onclick="switchLang('de')">Deutsch</button>
+            <button onclick="switchLang('en')">English</button>
+        </div>
+
+        <!-- GERMAN -->
+        <div id="content-de" class="content active">
+            <div class="section">
+                <h2>Konto und Daten l&ouml;schen</h2>
+                <p>Sie k&ouml;nnen Ihr MatchMyTrip-Konto und alle damit verbundenen Daten jederzeit l&ouml;schen.</p>
+            </div>
+
+            <div class="section">
+                <h2>Option 1: In der App</h2>
+                <div class="steps">
+                    <ol>
+                        <li>&Ouml;ffnen Sie die MatchMyTrip-App</li>
+                        <li>Gehen Sie zu <strong>Profil</strong> (untere Navigation)</li>
+                        <li>Tippen Sie auf <strong>Konto l&ouml;schen</strong></li>
+                        <li>Best&auml;tigen Sie die L&ouml;schung</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Option 2: Per E-Mail</h2>
+                <p>Senden Sie eine E-Mail an:</p>
+                <div class="contact-info">
+                    <p><a href="mailto:matchmytripapp@gmail.com?subject=Konto%20l%C3%B6schen&body=Bitte%20l%C3%B6schen%20Sie%20mein%20Konto%20und%20alle%20damit%20verbundenen%20Daten.">matchmytripapp@gmail.com</a></p>
+                    <p>Betreff: &bdquo;Konto l&ouml;schen&ldquo;</p>
+                </div>
+                <p>Wir bearbeiten Ihre Anfrage innerhalb von 7 Werktagen.</p>
+            </div>
+
+            <div class="section">
+                <h2>Welche Daten werden gel&ouml;scht?</h2>
+                <p>Bei der Kontol&ouml;schung werden <strong>alle</strong> Ihre personenbezogenen Daten unwiderruflich entfernt:</p>
+                <ul>
+                    <li>Benutzerprofil (Name, E-Mail, Profilbild)</li>
+                    <li>Alle Reisegruppen, die Sie erstellt haben</li>
+                    <li>Ihre Swipe-Daten und Match-Ergebnisse</li>
+                    <li>Favoriten-Listen</li>
+                    <li>Nutzungsstatistiken</li>
+                    <li>Benachrichtigungsverlauf</li>
+                    <li>Einwilligungsnachweise</li>
+                </ul>
+
+                <div class="warning">
+                    <p><strong>Achtung:</strong> Die L&ouml;schung ist endg&uuml;ltig und kann nicht r&uuml;ckg&auml;ngig gemacht werden. Ihre Mitgliedschaft in bestehenden Reisegruppen wird ebenfalls entfernt.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Aufbewahrungspflichten</h2>
+                <p>Folgende Daten k&ouml;nnen nach der L&ouml;schung aufbewahrt werden:</p>
+                <ul>
+                    <li><strong>Anonymisierte Statistiken:</strong> K&ouml;nnen f&uuml;r Analysen aufbewahrt werden (kein R&uuml;ckschluss auf Ihre Person m&ouml;glich)</li>
+                    <li><strong>Consent-Dokumentation:</strong> Bis zu 3 Jahre zur Nachweisbarkeit gem&auml;&szlig; DSGVO</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ENGLISH -->
+        <div id="content-en" class="content">
+            <div class="section">
+                <h2>Delete Account and Data</h2>
+                <p>You can delete your MatchMyTrip account and all associated data at any time.</p>
+            </div>
+
+            <div class="section">
+                <h2>Option 1: In the App</h2>
+                <div class="steps">
+                    <ol>
+                        <li>Open the MatchMyTrip app</li>
+                        <li>Go to <strong>Profile</strong> (bottom navigation)</li>
+                        <li>Tap <strong>Delete Account</strong></li>
+                        <li>Confirm the deletion</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Option 2: Via Email</h2>
+                <p>Send an email to:</p>
+                <div class="contact-info">
+                    <p><a href="mailto:matchmytripapp@gmail.com?subject=Delete%20Account&body=Please%20delete%20my%20account%20and%20all%20associated%20data.">matchmytripapp@gmail.com</a></p>
+                    <p>Subject: &ldquo;Delete Account&rdquo;</p>
+                </div>
+                <p>We will process your request within 7 business days.</p>
+            </div>
+
+            <div class="section">
+                <h2>What Data Will Be Deleted?</h2>
+                <p>When you delete your account, <strong>all</strong> your personal data will be permanently removed:</p>
+                <ul>
+                    <li>User profile (name, email, profile picture)</li>
+                    <li>All travel groups you created</li>
+                    <li>Your swipe data and match results</li>
+                    <li>Favorite lists</li>
+                    <li>Usage statistics</li>
+                    <li>Notification history</li>
+                    <li>Consent records</li>
+                </ul>
+
+                <div class="warning">
+                    <p><strong>Warning:</strong> Deletion is permanent and cannot be undone. Your membership in existing travel groups will also be removed.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Retention Requirements</h2>
+                <p>The following data may be retained after deletion:</p>
+                <ul>
+                    <li><strong>Anonymized statistics:</strong> May be retained for analysis (no link to your identity possible)</li>
+                    <li><strong>Consent documentation:</strong> Up to 3 years for GDPR compliance verification</li>
+                </ul>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 MatchMyTrip - Louis Schestak</p>
+        </footer>
+    </div>
+
+    <script>
+        function switchLang(lang) {
+            document.querySelectorAll('.content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.lang-switch button').forEach(btn => btn.classList.remove('active'));
+            document.getElementById('content-' + lang).classList.add('active');
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>
